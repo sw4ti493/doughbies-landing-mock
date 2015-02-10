@@ -1,0 +1,144 @@
+<html><head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <link type="text/css" rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
+
+  <link href="http://fonts.googleapis.com/css?family=Nunito:300" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Nunito:700" rel="stylesheet" type="text/css">
+  <script src="zipCodeSample.js"></script>
+</head>
+<body style="font-family:'Nunito'; line-height:1.5em">
+  <section id="homeHeader">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-12 text-center">
+            <a href="http://doughbies.com"><img id="site-logo" class="img-responsive center-block" src="logo.png"></a>
+          </div>
+        </div>
+      </div>
+  </section>
+  <div id="content-wrapper">
+    <section id="home">
+    <div class="container-fluid on-demand" style="background-color:#A09996"><br><br><br>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-xs-12 container-fluid">
+            <h1 style="font-family:'Nunito'; color:white; line-height:1.5em; font-size:2.5em">Fresh chocolate chip cookies delivered in 20 minutes or less.<br>Monday through Friday,<br> 12pm to 4pm.</h1>
+            <br>
+
+              <form class="form-inline" role="form">
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="email" class="form-control" id="exampleInputEmail2" placeholder="Enter Email">
+                  </div>
+                </div>
+                <div class="form-group" style="border-radius:0">
+                  <span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                  <input type="text" class="form-control" id="txtZip" name="zip" placeholder="Enter Zip Code" style="border-radius:0">
+                </div><br><br><br><br>
+                <button type="submit" class="btn btn-lg btn-custom" onclick="ValidZipCode(this.form.zip.value)" style="border-radius:0; background-color:#f68e1e; color:white" style="color:white">GET COOKIES NOW</button>
+              </form>
+
+
+              </div>
+              <div class="col-md-6 col-xs-12 container-fluid on-demand">
+                <img src="cookies.png" class="img-responsive" style="height:60%; border-radius:50%">
+              </div>
+          </div>
+      </div><br>
+    </div>
+
+    <!-- newsletter -->
+    <div class="container-fluid" style="background-color:#E5DBD7">
+      <div class="row">
+        <div class="col-sm-12 col-xs-12 text-center"><br>
+          <form id="newsletterSignup" novalidate="novalidate" class="form-inline">
+            <div class="form-group">
+              <label for="email" class="message col-sm-4 col-xs-12 control-label input-group" style="float:left">GET BAKED ONCE IN A BIT</label>
+              <div class="control col-md-8 col-xs-12 form-group">
+               <div class="input-group">
+                <input type="text" name="email" placeholder="EMAIL ADDRESS" required="" data-schema-key="email" class="form-control">
+                <span class="input-group-btn"><button class="subscribe btn btn-custom" type="submit" style="background-color:#f68e1e; color:white; border-radius:0"><i class="fa fa-long-arrow-right fa-lg" style="height:1.1em"></i></button></span>
+              </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+<br><br><br><br><br>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <h1>How It Works</h1><br>
+        </div>
+      </div>
+      <div class="col-sm-12">
+        <div class="row">
+          <div class="col-sm-4" style="text-align:center">
+            <div class="row">
+              <img src="laptopIcon.png"><br>
+              <h4 class="">Order online</h4>
+            </div>
+            <div class="row">
+              <p>Enter your zip code.</p>
+            </div>
+          </div>
+          <div class="col-sm-4" style="text-align:center">
+            <div class="row">
+              <img src="ovenIcon.png"><br>
+              <h4 class="">Pick a quantity</h4>
+            </div>
+            <div class="row">
+              <p>Cookies are offered in quantities <br> of 3s, 6s, &amp; 12s.</p>
+            </div>
+          </div>
+          <div class="col-sm-4" style="text-align:center">
+            <div class="row">
+              <img src="clockIcon.png" alt="Deliever in under 20 mins"><br>
+              <h4 class="">Delivery in under <br>20 minutes</h4>
+            </div>
+            <div class="row">
+              <p>Meet your driver wearing <br> #DoughbiesOrange at the curb.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+        <!-- border -->
+        <div class="row">
+          <hr>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  </div>
+  <footer id="homeFooter">
+    <div class="container-fluid">
+      <div class="row">
+        <hr>
+      </div>
+      </div>
+      <div class="row">
+        <hr>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 text-center">
+          <a href="mailto:info@doughbies.com" class="primary-colored" style="text-decoration:none; color:black">INFO@DOUGHBIES.COM  |</a>
+          <a href="tel:415.273.9535" style="text-decoration:none; color:black">415.273.9535  |</a>
+          <a href="https://www.facebook.com/doughbies" target="_blank" title="Facebook"><i class="fa fa-facebook fa-lg" style="color:black"></i></a>
+          <a href="https://twitter.com/doughbies" target="_blank" title="Twitter" style="color:black"><i class="fa fa-twitter fa-lg"></i></a>
+          <a href="http://www.pinterest.com/doughbies" target="_blank" title="Pinterest" style="color:black"><i class="fa fa-pinterest fa-lg"></i></a>
+          <a href="http://instagram.com/doughbies/" target="_blank" title="Instagram" style="color:black"><i class="fa fa-instagram fa-lg"></i></a>
+        </div>
+      </div>
+      <div id="copyright" class="row text-center">
+        &nbsp;© Copyright 2014 Doughbies
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
